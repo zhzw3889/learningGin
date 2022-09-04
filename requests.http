@@ -1,0 +1,23 @@
+http://www.baidu.com
+
+###
+Get http://localhost:9090/get?name=zhzw HTTP/1.1
+
+###
+POST http://localhost:9090/post HTTP/1.1
+content-type: application/json
+
+{
+    "name": "zhzw",
+    "password": "test"
+}
+
+### redrect
+Get http://localhost:9090/testRedirect HTTP/1.1
+###
+Get http://localhost:9090/redirect1 HTTP/1.1
+### redrect1
+Get http://localhost:9090/redirect2 HTTP/1.1
+
+### 请求其他站点
+Get http://localhost:9090/getOtherData HTTP/1.1

@@ -1,0 +1,95 @@
+The disableGPU setting is set to undefined
+Not disabling GPU
+Main~createDefaultWorkingDir - Default working dir creation already attempted
+1662289081125 main info "Booting Postman 9.27.0, linux-5.15.0-5parrot1-amd64 on x64"
+1662289081126 main info "EventBus~initialize - Success"
+1662289081128 main info "Proxy configuration has not been setup"
+1662289081128 main info "CloudProxyManager~init - Success"
+1662289081135 main info "UpdateHandler~init - Success"
+1662289081137 main info "LeaderSelection: Initialized successfully"
+1662289081137 main info "VersionDependencyService: Initialized successfully"
+1662289081145 main info "LinuxAutoUpdater~Cleanup - Initial cleanup successful"
+1662289081158 main info "GPU detected VID 4098 DID 5708 ACTIVE true"
+[57550:0904/185801.224122:ERROR:sandbox_linux.cc(374)] InitializeSandbox() called with multiple threads in process gpu-process.
+1662289082131 main info "RuntimeIPCAgent~started: Success"
+1662289083738 main info "UpdateHandler~app-update-events - Received event",{"name":"checkForElectronVersionUpdated","namespace":"appUpdate"}
+INTERCEPTOR CONNECTIVITY: Connecting to Interceptor Bridge
+InterceptorBridge: Trying to connect Native App IPC~Interceptor Bridge
+1662289083762 main info "windowManager: First requester booted successfully."
+1662289083763 main info "windowManager~restoreWindows: Restoring requester windows"
+1662289083763 main info "Main~AppEvents - Received booted event for process requester.Version 9.28.2 UI Version: 9.28.2-ui-220812-1517 Desktop Platform Version: 9.27.0"
+IPCClient ~ WindowHandler: New event is received { type: 'window-opened' }
+IPCClient ~ WindowHandler: New event is received { type: 'leave-full-screen', windowId: 1 }
+1662289085268 main info "Main - model-events~user - (user, bootstrapUser) received"
+1662289095047 main info "UpdateHandler~app-update-events - Received event",{"name":"updateElectron","namespace":"appUpdate","data":{"channel":"stable","version":"9.27.0","downloadVersion":"9.29.0","appId":"d3c90571-351d-4b4d-830f-4f883f1ed9d6","userAgent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Postman/9.27.0 Chrome/94.0.4606.81 Electron/15.5.7 Safari/537.36","platform":"LINUX","arch":"64","downloadURL":"https://dl.pstmn.io/download/version/9.29.0/linux_64","updateServerDomain":"https://dl.pstmn.io/","additionalParamsString":"installationId=d3c90571-351d-4b4d-830f-4f883f1ed9d6&userId=16564153&syncEnabled=true&teamPlan=&teamId=0","userId":"16564153"}}
+1662289095048 main info "LinuxUpdater~downloadUpdate - UpdateInfo received",{"channel":"stable","version":"9.27.0","downloadVersion":"9.29.0","appId":"d3c90571-351d-4b4d-830f-4f883f1ed9d6","userAgent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Postman/9.27.0 Chrome/94.0.4606.81 Electron/15.5.7 Safari/537.36","platform":"LINUX","arch":"64","downloadURL":"https://dl.pstmn.io/download/version/9.29.0/linux_64","updateServerDomain":"https://dl.pstmn.io/","additionalParamsString":"installationId=d3c90571-351d-4b4d-830f-4f883f1ed9d6&userId=16564153&syncEnabled=true&teamPlan=&teamId=0","userId":"16564153"}
+IPCClient ~ WindowHandler: New event is received { type: 'leave-full-screen', windowId: 1 }
+IPCClient ~ WindowHandler: New event is received { type: 'leave-full-screen', windowId: 1 }
+IPCClient ~ WindowHandler: New event is received { type: 'leave-full-screen', windowId: 1 }
+IPCClient ~ WindowHandler: New event is received { type: 'leave-full-screen', windowId: 1 }
+IPCClient ~ WindowHandler: New event is received { type: 'leave-full-screen', windowId: 1 }
+IPCClient ~ WindowHandler: New event is received { type: 'leave-full-screen', windowId: 1 }
+IPCClient ~ WindowHandler: New event is received { type: 'leave-full-screen', windowId: 1 }
+1662289139579 main info "LinuxAutoUpdater~Extraction completed",{"packageName":"Postman","eID":"Postman-1662289095049","downloadURL":"https://dl.pstmn.io/download/version/9.29.0/linux_64","downloadDirectory":"/opt/Postman","downloadInfo":{"status":"DOWNLOAD_COMPLETED","error":null,"downloadDirectory":"/opt/Postman"},"extractInfo":{"status":"EXTRACTION_SUCCESSFUL","error":null,"extractDirectory":"/opt/Postman","standardOutput":"","standardError":""}}
+1662289139580 main info "@postman/app-updater: Update updateDownloaded","","Postman 9.29.0","","https://dl.pstmn.io/download/version/9.29.0/linux_64"
+1662289139581 main info "UpdateHandler~app-update-events - Received event",{"name":"electronAppUpdateDownloaded","namespace":"appUpdate","data":{"releaseName":"Postman 9.29.0","notes":"","date":"","URL":"https://dl.pstmn.io/download/version/9.29.0/linux_64"}}
+IPCClient ~ WindowHandler: New event is received { type: 'leave-full-screen', windowId: 1 }
+IPCClient ~ WindowHandler: New event is received { type: 'leave-full-screen', windowId: 1 }
+IPCClient ~ WindowHandler: New event is received { type: 'leave-full-screen', windowId: 1 }
+IPCClient ~ WindowHandler: New event is received { type: 'leave-full-screen', windowId: 1 }
+IPCClient ~ WindowHandler: New event is received { type: 'leave-full-screen', windowId: 1 }
+IPCClient ~ WindowHandler: New event is received { type: 'leave-full-screen', windowId: 1 }
+IPCClient ~ WindowHandler: New event is received { type: 'leave-full-screen', windowId: 1 }
+IPCClient ~ WindowHandler: New event is received { type: 'leave-full-screen', windowId: 1 }
+IPCClient ~ WindowHandler: New event is received { type: 'leave-full-screen', windowId: 1 }
+IPCClient ~ WindowHandler: New event is received { type: 'leave-full-screen', windowId: 1 }
+IPCClient ~ WindowHandler: New event is received { type: 'leave-full-screen', windowId: 1 }
+IPCClient ~ WindowHandler: New event is received { type: 'leave-full-screen', windowId: 1 }
+IPCClient ~ WindowHandler: New event is received { type: 'leave-full-screen', windowId: 1 }
+IPCClient ~ WindowHandler: New event is received { type: 'leave-full-screen', windowId: 1 }
+IPCClient ~ WindowHandler: New event is received { type: 'leave-full-screen', windowId: 1 }
+IPCClient ~ WindowHandler: New event is received { type: 'leave-full-screen', windowId: 1 }
+IPCClient ~ WindowHandler: New event is received { type: 'leave-full-screen', windowId: 1 }
+IPCClient ~ WindowHandler: New event is received { type: 'leave-full-screen', windowId: 1 }
+IPCClient ~ WindowHandler: New event is received { type: 'leave-full-screen', windowId: 1 }
+IPCClient ~ WindowHandler: New event is received { type: 'leave-full-screen', windowId: 1 }
+IPCClient ~ WindowHandler: New event is received { type: 'leave-full-screen', windowId: 1 }
+IPCClient ~ WindowHandler: New event is received { type: 'leave-full-screen', windowId: 1 }
+IPCClient ~ WindowHandler: New event is received { type: 'leave-full-screen', windowId: 1 }
+IPCClient ~ WindowHandler: New event is received { type: 'leave-full-screen', windowId: 1 }
+IPCClient ~ WindowHandler: New event is received { type: 'leave-full-screen', windowId: 1 }
+IPCClient ~ WindowHandler: New event is received { type: 'leave-full-screen', windowId: 1 }
+IPCClient ~ WindowHandler: New event is received { type: 'leave-full-screen', windowId: 1 }
+IPCClient ~ WindowHandler: New event is received { type: 'leave-full-screen', windowId: 1 }
+IPCClient ~ WindowHandler: New event is received { type: 'leave-full-screen', windowId: 1 }
+IPCClient ~ WindowHandler: New event is received { type: 'leave-full-screen', windowId: 1 }
+IPCClient ~ WindowHandler: New event is received { type: 'leave-full-screen', windowId: 1 }
+IPCClient ~ WindowHandler: New event is received { type: 'leave-full-screen', windowId: 1 }
+IPCClient ~ WindowHandler: New event is received { type: 'leave-full-screen', windowId: 1 }
+IPCClient ~ WindowHandler: New event is received { type: 'leave-full-screen', windowId: 1 }
+IPCClient ~ WindowHandler: New event is received { type: 'leave-full-screen', windowId: 1 }
+IPCClient ~ WindowHandler: New event is received { type: 'leave-full-screen', windowId: 1 }
+IPCClient ~ WindowHandler: New event is received { type: 'leave-full-screen', windowId: 1 }
+IPCClient ~ WindowHandler: New event is received { type: 'leave-full-screen', windowId: 1 }
+IPCClient ~ WindowHandler: New event is received { type: 'leave-full-screen', windowId: 1 }
+IPCClient ~ WindowHandler: New event is received { type: 'leave-full-screen', windowId: 1 }
+IPCClient ~ WindowHandler: New event is received { type: 'leave-full-screen', windowId: 1 }
+IPCClient ~ WindowHandler: New event is received { type: 'leave-full-screen', windowId: 1 }
+IPCClient ~ WindowHandler: New event is received { type: 'leave-full-screen', windowId: 1 }
+IPCClient ~ WindowHandler: New event is received { type: 'leave-full-screen', windowId: 1 }
+IPCClient ~ WindowHandler: New event is received { type: 'leave-full-screen', windowId: 1 }
+IPCClient ~ WindowHandler: New event is received { type: 'leave-full-screen', windowId: 1 }
+IPCClient ~ WindowHandler: New event is received { type: 'leave-full-screen', windowId: 1 }
+IPCClient ~ WindowHandler: New event is received { type: 'leave-full-screen', windowId: 1 }
+IPCClient ~ WindowHandler: New event is received { type: 'leave-full-screen', windowId: 1 }
+IPCClient ~ WindowHandler: New event is received { type: 'leave-full-screen', windowId: 1 }
+IPCClient ~ WindowHandler: New event is received { type: 'leave-full-screen', windowId: 1 }
+IPCClient ~ WindowHandler: New event is received { type: 'leave-full-screen', windowId: 1 }
+IPCClient ~ WindowHandler: New event is received { type: 'leave-full-screen', windowId: 1 }
+IPCClient ~ WindowHandler: New event is received { type: 'leave-full-screen', windowId: 1 }
+IPCClient ~ WindowHandler: New event is received { type: 'leave-full-screen', windowId: 1 }
+IPCClient ~ WindowHandler: New event is received { type: 'leave-full-screen', windowId: 1 }
+IPCClient ~ WindowHandler: New event is received { type: 'leave-full-screen', windowId: 1 }
+IPCClient ~ WindowHandler: New event is received { type: 'leave-full-screen', windowId: 1 }
+IPCClient ~ WindowHandler: New event is received { type: 'leave-full-screen', windowId: 1 }
+IPCClient ~ WindowHandler: New event is received { type: 'leave-full-screen', windowId: 1 }
