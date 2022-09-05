@@ -21,3 +21,10 @@ Get http://localhost:9090/redirect2 HTTP/1.1
 
 ### 请求其他站点
 Get http://localhost:9090/getOtherData HTTP/1.1
+
+### 中间件测试01
+Get http://localhost:9090/middleware?name=zhzw3889&age=30 HTTP/1.1
+### 中间件测试02
+Get http://localhost:9090/middleware?name=zhzw&age=30 HTTP/1.1
+### 中间件测试01
+Get http://localhost:9090/middleware?name=zhzw3889&age=300 HTTP/1.1

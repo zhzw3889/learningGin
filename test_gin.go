@@ -1,7 +1,10 @@
 package main
 
 import (
+	"fmt"
+	"log"
 	"net/http"
+	"strconv"
 
 	"github.com/gin-gonic/gin"
 )
@@ -23,6 +26,7 @@ func main() {
 		r.HandleContext(c)
 	})
 
+	// 转发外部数据
 	r.GET("/getOtherData", func(ctx *gin.Context) {
 		url := "https://img2.baidu.com/it/u=1649006510,1140670358&fm=253&fmt=auto&app=138&f=JPEG?w=600&h=350"
 		response, err := http.Get(url)
@@ -37,6 +41,20 @@ func main() {
 		ctx.DataFromReader(http.StatusOK, contentlength, contentType, body, nil)
 	})
 
+	// Middleware接口
+	r.Use(Middleware())
+	r.GET("/middleware", func(c *gin.Context) {
+		fmt.Println("服务端开始执行...")
+		name := c.Query("name")
+		ageStr := c.Query("age")
+		age, _ := strconv.Atoi(ageStr)
+		log.Println(name, age)
+		res := struct {
+			Name string `json:"name"`
+			Age  int    `json:"age"`
+		}{Name: name, Age: age}
+		c.JSON(http.StatusOK, res)
+	})
 	r.Run(":9090")
 
 }
@@ -75,4 +93,28 @@ func testRedirect(c *gin.Context) {
 func redirectToOut(c *gin.Context) {
 	url := "http://www.baidu.com"
 	c.Redirect(http.StatusMovedPermanently, url)
+}
+
+// 自定义中间件
+func Middleware() gin.HandlerFunc {
+	return func(c *gin.Context) {
+		fmt.Println("中间件开始执行===")
+		name := c.Query("name")
+		ageStr := c.Query("age")
+		age, err := strconv.Atoi(ageStr)
+		if err != nil {
+			c.AbortWithStatusJSON(http.StatusBadRequest, "输入的数据错误，年龄不是整数")
+			return
+		}
+		if age < 0 || age > 100 {
+			c.AbortWithStatusJSON(http.StatusBadRequest, "输入的数据错误，年龄数据错误")
+			return
+		}
+		if len(name) < 6 || len(name) > 12 {
+			c.AbortWithStatusJSON(http.StatusBadRequest, "用户名只能是6-12位")
+			return
+		}
+		c.Next() // 执行后续操作
+		fmt.Println(name, age)
+	}
 }
